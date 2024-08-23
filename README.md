@@ -22,7 +22,7 @@ This application allows users to create an account with OTP verification, log in
 
 ## Live URL
 
-You can view the live application [here](https://evitalrx-frontendlive.vercel.app/). 🌐
+The frontend is live on Vercel. You can view the application [here](https://evitalrx-frontendlive.vercel.app/). 🌐
 
 ## Running the Application
 
