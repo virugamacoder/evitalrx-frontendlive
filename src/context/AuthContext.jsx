@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
     const user = cookies.get("user");
     const token = cookies.get("token");
 
-    if (user && token) {    
+    if (user && token) {
       setUser(user);
       setToken(token);
     }
