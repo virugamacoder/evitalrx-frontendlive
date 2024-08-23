@@ -1,46 +1,77 @@
-# Getting Started with Create React App and Redux
+# Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## Overview
 
-## Available Scripts
+This application allows users to create an account with OTP verification, log in using email and password, manage their profile, and handle password resets via email. The application uses several APIs for different functionalities.
 
-In the project directory, you can run:
+## APIs
 
-### `npm start`
+1. **Sign Up Process**
+   - **`signUpSendOtpAPI`**: Sends an OTP to the user's email for account creation. 📧
+   - **`signUpVerifyOtpAPI`**: Verifies the OTP received by the user to complete the signup process. ✅
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Login Process**
+   - **`loginAPI`**: Logs in the user using their email and password. 🔑
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Profile Management**
+   - **`profileUpdateAPI`**: Allows logged-in users to update their profile information. ✏️
 
-### `npm test`
+4. **Password Recovery**
+   - **`forgotPasswordAPI`**: Sends a password reset link to the user's email. 📬
+   - **`resetPasswordAPI`**: Resets the password using the link received via email. 🔒
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Live URL
 
-### `npm run build`
+The frontend is live on Vercel. You can view the application [here](https://evitalrx-frontendlive.vercel.app/). 🌐
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running the Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Node.js and npm installed on your machine. 🛠️
 
-### `npm run eject`
+### Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone the repository:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    git clone https://github.com/virugamacoder/evitalrx-frontendlive.git
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Navigate to the project directory:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```bash
+    cd evitalrx-frontendlive
+    ```
 
-## Learn More
+3. Install the dependencies:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm install
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running the Application
+
+1. Start the development server:
+
+    ```bash
+    npm start
+    ```
+
+2. Open your browser and go to `http://localhost:3000` to view the application. 🌍
+
+### Usage
+
+1. **Create Account**
+   - Enter your information in the signup form. An OTP will be sent to your email. 📧
+   - Verify the OTP to complete the signup process and create your account. 🎉
+
+2. **Login**
+   - Enter your email and password to log in. 🔑
+
+3. **Manage Profile**
+   - Once logged in, you can update your profile information using the profile management section. 📝
+
+4. **Forgot Password**
+   - Enter your email to receive a password reset link. 📬
+   - Use the link to set a new password. 🔒
