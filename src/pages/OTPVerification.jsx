@@ -15,7 +15,7 @@ const OTPVerification = () => {
 
   useEffect(() => {
     if (!email) {
-      navigate("/signup"); // Redirect if email is not present
+      navigate("/login"); 
     }
   }, [email, navigate]);
 
@@ -67,6 +67,7 @@ const OTPVerification = () => {
   };
 
   const handleSubmit = async (e) => {
+    e.preventDefault();
     setLoad(true);
     const otp = inputsRef.current.map((input) => input.value).join("");
     if (otp.length !== 6) {
@@ -89,9 +90,7 @@ const OTPVerification = () => {
         navigate("/login", { replace: true });
       }
     } catch (error) {
-      toast.error(
-        "Failed to Otp Verification. Please check your input and try again later."
-      );
+      toast.error(error.response.data.message, { duration: 4000 });
     } finally {
       setLoad(false);
     }
