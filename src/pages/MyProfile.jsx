@@ -233,6 +233,7 @@ function MyProfile() {
                 className={"md:text-sm lg:text-base"}
                 schema={schema}
                 setError={setError}
+                max={new Date().toISOString().split("T")[0]}
               />
             </div>
 
