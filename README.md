@@ -12,6 +12,13 @@ This application allows users to create an account with OTP verification, log in
 - **Form Handling** 📋: Ensures accurate user input using Yup and React-Hook-Form. ✔️
 - **Access Control** 🚪: Secures access to certain pages, ensuring only authenticated users can access them. 🔒
 
+## 🏗️ Project Structure
+
+- **Frontend**: Built with React.js for creating the user interface and handling client-side logic. 🖥️
+- **Styling**: Tailwind CSS is used for styling the components, ensuring a modern and responsive design. 🎨
+- **Form Validation**: Yup and React-Hook-Form manage and validate user input. 📋
+
+
 ## 🛠️ APIs
 
 1. **Sign Up Process** 📧
