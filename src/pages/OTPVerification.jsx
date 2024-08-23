@@ -15,7 +15,7 @@ const OTPVerification = () => {
 
   useEffect(() => {
     if (!email) {
-      navigate("/login"); 
+      navigate("/login");
     }
   }, [email, navigate]);
 
@@ -68,13 +68,14 @@ const OTPVerification = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoad(true);
+
     const otp = inputsRef.current.map((input) => input.value).join("");
     if (otp.length !== 6) {
       setOtpError("Invalid OTP. Please enter a 6-digit OTP.");
       return;
     }
     console.log("Entered OTP:", otp);
+    setLoad(true);
 
     const data = {
       email,
